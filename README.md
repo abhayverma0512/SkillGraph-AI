@@ -38,13 +38,21 @@ index.html
 script.js
 style.css
 🔄 How It Works
+
 Select a target career
+
 Rate your core technical skills
+
 Complete the career-specific skill assessment
+
 Add practical evidence such as projects, problems solved, GitHub activity, and assessment score
+
 Analyze the profile
+
 View career readiness, skill gaps, related career matches, and personalized roadmap
+
 Track previous assessments and progress through History and Analytics
+
 🔐 Backend Configuration
 
 The application uses an environment variable for the database password.

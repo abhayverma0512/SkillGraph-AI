@@ -15,18 +15,20 @@ Core and career-specific skill tracking
 Responsive desktop and mobile UI
 MySQL database integration
 Spring Boot REST API
+
 🛠️ Tech Stack
 Frontend
-HTML
-CSS
-JavaScript
+  HTML
+  CSS
+  JavaScript
 Backend
-Java
-Spring Boot
-Spring Data JPA
-Maven
+  Java
+  Spring Boot
+  Spring Data JPA
+  Maven
 Database
-MySQL 8
+  MySQL 8
+  
 📁 Project Structure
 Backend/
 src/
@@ -39,19 +41,19 @@ script.js
 style.css
 🔄 How It Works
 
-Select a target career
+1. Select a target career
 
-Rate your core technical skills
+2. Rate your core technical skills
 
-Complete the career-specific skill assessment
+3. Complete the career-specific skill assessment
 
-Add practical evidence such as projects, problems solved, GitHub activity, and assessment score
+4. Add practical evidence such as projects, problems solved, GitHub activity, and assessment score
 
-Analyze the profile
+5. Analyze the profile
 
-View career readiness, skill gaps, related career matches, and personalized roadmap
+6. View career readiness, skill gaps, related career matches, and personalized roadmap
 
-Track previous assessments and progress through History and Analytics
+7. Track previous assessments and progress through History and Analytics
 
 🔐 Backend Configuration
 
@@ -96,9 +98,9 @@ SkillGraph AI supports both desktop and mobile screen sizes with a responsive us
 
 👨‍💻 Author
 
-Abhay Verma
+Abhay Pratap Verma
 
-GitHub: abhayverma0512
+GitHub: https://github.com/abhayverma0512
 
 📌 Project Status
 

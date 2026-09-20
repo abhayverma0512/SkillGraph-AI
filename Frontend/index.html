@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillGraph AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>SkillGraph AI</h1>
+            <p>AI-Powered Career &amp; Skill Readiness Platform</p>
+
+            <nav>
+                <a href="#career-selection">Career</a>
+                <a href="#skill-assessment">Assessment</a>
+                <a href="#history-section">History</a>
+                <a href="#analytics-section">Analytics</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- CAREER INTRO -->
+        <section class="career-intro">
+            <div class="container">
+                <h2>Build Your Career Path</h2>
+
+                <p>
+                    Choose the computer/IT career you want to pursue,
+                    analyze your current skills, identify gaps and get
+                    a personalized roadmap.
+                </p>
+
+                <button onclick="startAssessment()">
+                    Start Skill Assessment
+                </button>
+            </div>
+        </section>
+
+
+        <!-- CAREER SELECTION -->
+        <section id="career-selection">
+            <div class="container">
+
+                <h2>Choose Your Career</h2>
+
+                <p>
+                    Select the job role you want to prepare for.
+                    SkillGraph AI will analyze your skills according
+                    to the selected career.
+                </p>
+
+                <label for="career">Target Career</label>
+
+                <select id="career">
+
+                    <!-- SOFTWARE & DEVELOPMENT -->
+                    <optgroup label="Software & Development">
+                        <option value="software-engineer">Software Engineer</option>
+                        <option value="software-developer">Software Developer</option>
+                        <option value="application-developer">Application Developer</option>
+                        <option value="backend">Backend Developer</option>
+                        <option value="frontend">Frontend Developer</option>
+                        <option value="fullstack">Full Stack Developer</option>
+                        <option value="api-developer">API Developer</option>
+                        <option value="web-developer">Web Developer</option>
+                        <option value="mobile-app-developer">Mobile App Developer</option>
+                        <option value="android-developer">Android Developer</option>
+                        <option value="ios-developer">iOS Developer</option>
+                        <option value="game-developer">Game Developer</option>
+                    </optgroup>
+
+                    <!-- CLOUD & DEVOPS -->
+                    <optgroup label="Cloud & DevOps">
+                        <option value="devops-engineer">DevOps Engineer</option>
+                        <option value="cloud-engineer">Cloud Engineer</option>
+                        <option value="cloud-architect">Cloud Architect</option>
+                        <option value="site-reliability-engineer">Site Reliability Engineer</option>
+                        <option value="platform-engineer">Platform Engineer</option>
+                        <option value="infrastructure-engineer">Infrastructure Engineer</option>
+                        <option value="kubernetes-engineer">Kubernetes Engineer</option>
+                        <option value="cloud-security-engineer">Cloud Security Engineer</option>
+                    </optgroup>
+
+                    <!-- AI & MACHINE LEARNING -->
+                    <optgroup label="AI & Machine Learning">
+                        <option value="machine-learning-engineer">Machine Learning Engineer</option>
+                        <option value="ai-engineer">AI Engineer</option>
+                        <option value="ai-developer">AI Developer</option>
+                        <option value="deep-learning-engineer">Deep Learning Engineer</option>
+                        <option value="nlp-engineer">NLP Engineer</option>
+                        <option value="computer-vision-engineer">Computer Vision Engineer</option>
+                        <option value="generative-ai-engineer">Generative AI Engineer</option>
+                        <option value="mlops-engineer">MLOps Engineer</option>
+                        <option value="ai-research-engineer">AI Research Engineer</option>
+                    </optgroup>
+
+                    <!-- DATA -->
+                    <optgroup label="Data & Analytics">
+                        <option value="data-analyst">Data Analyst</option>
+                        <option value="data-scientist">Data Scientist</option>
+                        <option value="data-engineer">Data Engineer</option>
+                        <option value="bi-developer">BI Developer</option>
+                        <option value="bi-analyst">BI Analyst</option>
+                        <option value="analytics-engineer">Analytics Engineer</option>
+                        <option value="database-developer">Database Developer</option>
+                        <option value="database-administrator">Database Administrator</option>
+                    </optgroup>
+
+                    <!-- CYBERSECURITY -->
+                    <optgroup label="Cybersecurity">
+                        <option value="cybersecurity-analyst">Cybersecurity Analyst</option>
+                        <option value="security-engineer">Security Engineer</option>
+                        <option value="security-analyst">Security Analyst</option>
+                        <option value="application-security-engineer">Application Security Engineer</option>
+                        <option value="cloud-security-engineer">Cloud Security Engineer</option>
+                        <option value="soc-analyst">SOC Analyst</option>
+                        <option value="penetration-tester">Penetration Tester</option>
+                        <option value="ethical-hacker">Ethical Hacker</option>
+                        <option value="security-architect">Security Architect</option>
+                        <option value="digital-forensics-analyst">Digital Forensics Analyst</option>
+                    </optgroup>
+
+                    <!-- TESTING & QA -->
+                    <optgroup label="Testing & Quality Assurance">
+                        <option value="qa-engineer">QA Engineer</option>
+                        <option value="qa-analyst">QA Analyst</option>
+                        <option value="test-engineer">Test Engineer</option>
+                        <option value="automation-test-engineer">Automation Test Engineer</option>
+                        <option value="sdet">SDET</option>
+                        <option value="performance-test-engineer">Performance Test Engineer</option>
+                        <option value="security-test-engineer">Security Test Engineer</option>
+                    </optgroup>
+
+                    <!-- ARCHITECTURE -->
+                    <optgroup label="Architecture & System Design">
+                        <option value="software-architect">Software Architect</option>
+                        <option value="solution-architect">Solution Architect</option>
+                        <option value="system-architect">System Architect</option>
+                        <option value="enterprise-architect">Enterprise Architect</option>
+                        <option value="technical-architect">Technical Architect</option>
+                        <option value="system-design-engineer">System Design Engineer</option>
+                    </optgroup>
+
+                    <!-- NETWORKING -->
+                    <optgroup label="Networking & Infrastructure">
+                        <option value="network-engineer">Network Engineer</option>
+                        <option value="network-administrator">Network Administrator</option>
+                        <option value="systems-administrator">Systems Administrator</option>
+                        <option value="systems-engineer">Systems Engineer</option>
+                        <option value="network-security-engineer">Network Security Engineer</option>
+                        <option value="infrastructure-engineer">Infrastructure Engineer</option>
+                    </optgroup>
+
+                    <!-- SPECIALIZED DEVELOPMENT -->
+                    <optgroup label="Specialized Technology">
+                        <option value="embedded-systems-developer">Embedded Systems Developer</option>
+                        <option value="firmware-engineer">Firmware Engineer</option>
+                        <option value="iot-developer">IoT Developer</option>
+                        <option value="robotics-engineer">Robotics Engineer</option>
+                        <option value="blockchain-developer">Blockchain Developer</option>
+                        <option value="web3-developer">Web3 Developer</option>
+                    </optgroup>
+
+                    <!-- UI / UX -->
+                    <optgroup label="UI, UX & Product Design Technology">
+                        <option value="ui-developer">UI Developer</option>
+                        <option value="ux-engineer">UX Engineer</option>
+                        <option value="ux-ui-developer">UX/UI Developer</option>
+                        <option value="design-technologist">Design Technologist</option>
+                        <option value="technical-ui-engineer">Technical UI Engineer</option>
+                    </optgroup>
+
+                    <!-- MOBILE -->
+                    <optgroup label="Mobile Development">
+                        <option value="flutter-developer">Flutter Developer</option>
+                        <option value="react-native-developer">React Native Developer</option>
+                        <option value="cross-platform-mobile-developer">Cross-Platform Mobile Developer</option>
+                    </optgroup>
+
+                    <!-- TECHNICAL BUSINESS -->
+                    <optgroup label="Technical Business & Product">
+                        <option value="technical-product-manager">Technical Product Manager</option>
+                        <option value="technical-program-manager">Technical Program Manager</option>
+                        <option value="solutions-engineer">Solutions Engineer</option>
+                        <option value="sales-engineer">Sales Engineer</option>
+                        <option value="technical-consultant">Technical Consultant</option>
+                        <option value="developer-advocate">Developer Advocate</option>
+                        <option value="technical-support-engineer">Technical Support Engineer</option>
+                    </optgroup>
+
+                </select>
+
+            </div>
+        </section>
+
+
+        <!-- FEATURES -->
+        <section class="features">
+            <div class="container">
+
+                <h2>What SkillGraph AI Provides</h2>
+
+                <div class="feature-grid">
+
+                    <div class="feature-card">
+                        <h3>Skill Analysis</h3>
+                        <p>
+                            Understand your current technical skill level
+                            and identify strengths and weaknesses.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Career Matching</h3>
+                        <p>
+                            Analyze your profile according to the career
+                            you actually want to pursue.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Skill Gap Detection</h3>
+                        <p>
+                            Discover which skills are missing or need
+                            improvement for your selected career.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Career Roadmap</h3>
+                        <p>
+                            Get a practical learning roadmap based on
+                            your current readiness.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SKILL ASSESSMENT -->
+        <section id="skill-assessment">
+            <div class="container">
+
+                <h2>Skill Assessment</h2>
+
+                <p>
+                    Rate your current level for each core technical skill.
+                </p>
+
+                <!-- JAVA -->
+                <div class="skill-item">
+                    <label for="java">Java</label>
+                    <select id="java">
+                        <option value="1">1 - Beginner</option>
+                        <option value="2">2 - Intermediate</option>
+                        <option value="3">3 - Advanced</option>
+                    </select>
+                </div>
+
+                <!-- PYTHON -->
+                <div class="skill-item">
+                    <label for="python">Python</label>
+                    <select id="python">
+                        <option value="1">1 - Beginner</option>
+                        <option value="2">2 - Intermediate</option>
+                        <option value="3">3 - Advanced</option>
+                    </select>
+                </div>
+
+                <!-- SQL -->
+                <div class="skill-item">
+                    <label for="sql">SQL</label>
+                    <select id="sql">
+                        <option value="1">1 - Beginner</option>
+                        <option value="2">2 - Intermediate</option>
+                        <option value="3">3 - Advanced</option>
+                    </select>
+                </div>
+
+                <!-- JAVASCRIPT -->
+                <div class="skill-item">
+                    <label for="javascript">JavaScript</label>
+                    <select id="javascript">
+                        <option value="1">1 - Beginner</option>
+                        <option value="2">2 - Intermediate</option>
+                        <option value="3">3 - Advanced</option>
+                    </select>
+                </div>
+
+                <!-- GIT -->
+                <div class="skill-item">
+                    <label for="git">Git & GitHub</label>
+                    <select id="git">
+                        <option value="1">1 - Beginner</option>
+                        <option value="2">2 - Intermediate</option>
+                        <option value="3">3 - Advanced</option>
+                    </select>
+                </div>
+
+                <!-- EVIDENCE -->
+                <div class="evidence-section">
+
+                    <h3>Practical Evidence</h3>
+
+                    <label for="projectsInput">Number of Projects</label>
+                    <input type="number" id="projectsInput" min="0" placeholder="Example: 3">
+
+                    <label for="problemsInput">Coding Problems Solved</label>
+                    <input type="number" id="problemsInput" min="0" placeholder="Example: 100">
+
+                    <label for="githubInput">GitHub Projects / Contributions</label>
+                    <input type="number" id="githubInput" min="0" placeholder="Example: 5">
+
+                    <label for="assessmentInput">Previous Assessment Score (%)</label>
+                    <input type="number" id="assessmentInput" min="0" max="100" placeholder="Example: 75">
+
+                </div>
+                <!-- CAREER-SPECIFIC SKILLS -->
+            <div id="career-specific-skills"></div>
+
+                <!-- ANALYZE -->
+                <button onclick="analyzeSkills()">
+                    Analyze My Career Readiness
+                </button>
+
+                <!-- RESULT -->
+                <div id="result"></div>
+
+            </div>
+        </section>
+
+
+        <!-- HISTORY -->
+        <section id="history-section">
+            <div class="container">
+
+                <h2>Assessment History</h2>
+
+                <p>Review your previous SkillGraph AI assessments.</p>
+
+                <button onclick="loadHistory()">
+                    View Assessment History
+                </button>
+
+                <div id="history"></div>
+
+            </div>
+        </section>
+
+
+        <!-- ANALYTICS -->
+        <section id="analytics-section">
+            <div class="container">
+
+                <h2>My Progress Analytics</h2>
+
+                <p>
+                    Track your readiness, strengths and improvement
+                    over multiple assessments.
+                </p>
+
+                <button onclick="loadAnalytics()">
+                    View My Progress
+                </button>
+
+                <div id="analytics"></div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SkillGraph AI — AI-Powered Career &amp; Skill Readiness Platform</p>
+        </div>
+    </footer>
+
+<script src="script.js?v=16"></script>
+</body>
+</html>

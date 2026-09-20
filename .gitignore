@@ -1,0 +1,9 @@
+Frontend/script-backup*
+Frontend/script-phase12-safe.js
+*.ps1
+*.log
+target/
+.idea/
+.vscode/
+*.class
+/script.js

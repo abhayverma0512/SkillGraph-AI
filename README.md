@@ -30,15 +30,19 @@ Database
   MySQL 8
   
 📁 Project Structure
+
 Backend/
 src/
 pom.xml
 mvnw
 mvnw.cmd
+
 Frontend/
+
 index.html
 script.js
 style.css
+
 🔄 How It Works
 
 1. Select a target career
@@ -66,6 +70,7 @@ spring.datasource.password=${DB_PASSWORD}
 Set the DB_PASSWORD environment variable before starting the backend.
 
 ▶️ Running the Project
+
 1. Start the Backend
 
 Open PowerShell:
@@ -85,6 +90,7 @@ Frontend/index.html
 in a web browser.
 
 📊 Main Sections
+
 Career Analysis
 Skill Gaps
 Related Career Matches
@@ -92,6 +98,7 @@ Personalized Roadmap
 Profile Evidence
 Assessment History
 Progress Analytics
+
 📱 Responsive Design
 
 SkillGraph AI supports both desktop and mobile screen sizes with a responsive user interface.
